@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--  设置那个Fragment是主页： app:startDestination="@id/homeFragment" -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ouwenbin.navigationdemo.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <!--
+        //设置页面的动画效果
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+
+        //设置Fragment位置在栈顶
+        app:popUpToInclusive="false"
+        -->
+        <action
+            android:id="@+id/action_homeFragment_to_oneFragment"
+            app:destination="@id/oneFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_homeFragment_to_twoFragment"
+            app:destination="@id/twoFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.ouwenbin.navigationdemo.fragment.OneFragment"
+        android:label="One"
+        tools:layout="@layout/fragment_one">
+        <action
+            android:id="@+id/action_oneFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.ouwenbin.navigationdemo.viewmodel.TwoFragment"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_twoFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

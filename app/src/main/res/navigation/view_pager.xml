@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_pager"
+    app:startDestination="@id/oneFragment2">
+
+    <fragment
+        android:id="@+id/oneFragment2"
+        android:name="com.ouwenbin.navigationdemo.NavigationUI.BottomNavigationView_ViewPager.fragment.OneFragment"
+        android:label="fragment_one2"
+        tools:layout="@layout/fragment_one2" />
+    <fragment
+        android:id="@+id/twoFragment2"
+        android:name="com.ouwenbin.navigationdemo.NavigationUI.BottomNavigationView_ViewPager.fragment.TwoFragment"
+        android:label="fragment_two2"
+        tools:layout="@layout/fragment_two2" />
+    <fragment
+        android:id="@+id/threeFragment2"
+        android:name="com.ouwenbin.navigationdemo.NavigationUI.BottomNavigationView_ViewPager.fragment.ThreeFragment"
+        android:label="fragment_three2"
+        tools:layout="@layout/fragment_three2" />
+    <fragment
+        android:id="@+id/fourFragment2"
+        android:name="com.ouwenbin.navigationdemo.NavigationUI.BottomNavigationView_ViewPager.fragment.FourFragment"
+        android:label="fragment_four2"
+        tools:layout="@layout/fragment_four2" />
+</navigation>

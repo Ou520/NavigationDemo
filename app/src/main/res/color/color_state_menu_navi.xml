@@ -1,0 +1,8 @@
+
+<!--设置图标的颜色-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 点击状态  -->
+    <item android:color="#FCFBFB" android:state_checked="true"/>
+    <!--  默认状态  -->
+    <item android:color="#524F4F" android:state_checked="false"/>
+</selector>

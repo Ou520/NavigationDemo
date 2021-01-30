@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/oneFragment2"
+        android:orderInCategory="0"
+        android:icon="@drawable/ic_looks_one_black_24dp"
+        android:title="First" />
+
+    <item
+        android:id="@+id/twoFragment2"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_looks_two_black_24dp"
+        android:title="Second" />
+
+    <item
+        android:id="@+id/threeFragment2"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_looks_3_black_24dp"
+        android:title="Third" />
+    <item
+        android:id="@+id/fourFragment2"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_looks_4_black_24dp"
+        android:title="Fourth" />
+</menu>
